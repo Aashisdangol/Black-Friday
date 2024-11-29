@@ -1,0 +1,97 @@
+.navigation-container{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    gap: 4%;
+    position: sticky;
+    top: 19%;
+    padding: 1.5% 0;
+}
+.navigation-container a{
+    color: black;
+   text-decoration: none;
+   
+}
+.navigation-container a:hover{
+    cursor: pointer;
+    color: red;
+    animation: navigation 1s infinite linear;
+}
+.navigation-container div:hover{
+    cursor: pointer;
+    color: red;
+    animation: navigation 1s infinite linear;
+}
+@keyframes navigation {
+    0%{
+        color: black;
+        transform: scale(1);
+        
+    }
+    100%{
+        color: rgb(255, 6, 6);
+        transform: scale(1.5);
+
+    }
+    
+}
+
+/* Black-friday deal */
+.deal-section{
+    background-image: linear-gradient(to right, #010101, #ff0000, rgb(0, 0, 0));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    height: 34vh;
+    align-items: center;
+    font-size: 8vh;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    z-index: -1;
+}
+.black-friday{
+    animation: text 10s infinite linear;
+}
+@keyframes text {
+    0%{
+        transform: scale(0.5);
+        color: red;
+
+    }
+    50%{
+        transform: scale(1.0);
+        color: rgb(13, 0, 255);
+    }
+    100%{
+        transform: 2.0;
+        color: rgb(255, 255, 255);
+    }
+    
+}
+.deal-section div{
+    position: relative;
+    top: 0vh;
+    left: -45vw;
+    color: #f11313;
+    font-size: 2vh;
+    animation: black-friday 5s ease-in-out 1s infinite;
+}
+
+@keyframes black-friday {
+    0%{
+        top:0vh;
+        left:-45vw ;
+        transform: scale(1.0);
+        color: gray;
+        
+    }
+    100%{
+        top:0vh ;
+        left: 40vw;
+        transform:  scale(3.0);
+        color: rgb(255, 0, 0);
+    }
+    
+}
