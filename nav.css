@@ -46,13 +46,13 @@
     height: 34vh;
     align-items: center;
     font-size: 8vh;
-    position: absolute;
     top: 30%;
     width: 100%;
     z-index: -1;
 }
 .black-friday{
     animation: text 10s infinite linear;
+    /* z-index: -1; */
 }
 @keyframes text {
     0%{
@@ -77,6 +77,7 @@
     color: #f11313;
     font-size: 2vh;
     animation: black-friday 5s ease-in-out 1s infinite;
+    /* z-index: -1; */
 }
 
 @keyframes black-friday {
@@ -89,7 +90,7 @@
     }
     100%{
         top:0vh ;
-        left: 40vw;
+        left: 38vw;
         transform:  scale(3.0);
         color: rgb(255, 0, 0);
     }
