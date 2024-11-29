@@ -1,11 +1,19 @@
+.sticky-container{
+    position: sticky;
+    top:0;
+    background-color: white;
+}
 .header-container{
+    background-color: rgb(200, 200, 200);
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 7%;
     text-align: center;
-    background-color: rgb(200, 200, 200);
     padding-left: 13%;
+    
+    
+
 }
 
 .app-container-1{
@@ -76,7 +84,8 @@
         font-size: 2vw;
     }
     margin: 10px 0;
-    padding: 0;
+    /* padding: 0; */
+    padding-bottom: 1%;
 }
 .name-container{
     font-size: 3vw;
@@ -98,7 +107,25 @@
     width: 10%;
     display: flex;
     gap: 10%;
-    
+}
+.profile-section-1 i:hover{
+    color: rgb(255, 0, 0);
+    width: 10%;
+    display: flex;
+    gap: 10%;
+    cursor: pointer;
+    animation: profile 5s infinite linear;
+}
+@keyframes profile{
+    0%{
+        color: rgb(255, 0, 0);
+        transform:  scale(1.5 );
 
+    }
+    100%{
+        color: rgb(255, 255, 0);
+        transform:scale(0.01) ;
+        
+    }
 }
 
